@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+    <style>
+        .main-box{
+            height: 500px;
+            width: 500px;
+            border: 4px solid brown;
+        }
+        .box-1{
+            margin: 20px;
+            border: 3px solid brown;
+            height: 70px;
+
+        }
+        p{
+        
+            padding-left:10px ;
+        }
+        h1{
+            font-weight: 1000px;
+            padding-left: 10px;
+        }
+        .box-2{
+            margin: 20px;
+            border: 3px solid brown;
+            height: 100px;
+        }
+      .box-3{
+        border: 3px solid brown;
+        margin: 20px;
+        height: 130px;
+        ;
+      }
+      .child-box-1{
+        margin: 10px;
+        border: 2px solid brown;
+        height: 50px;
+        padding-left: 7px;
+      }
+      .child-box-2{
+        border: 2px solid brown;
+        height: 50px;
+        margin: 0px 10px 10px 10px;
+        padding-left: 10px;
+      }
+      .buttons{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+      }
+      .button-1{
+        border: 4px solid brown;
+        height: 20px;
+        padding: 4px;
+      }
+   .link{
+    border: 4px solid brown;
+    padding: 4px
+   }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="box-1">
+            <h1>I'm a box</h1>
+        </div>
+        <div class="box-2"><p>I am a box with some text in it. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa aliquid quos nisi repudiandae nobis deserunt distinctio non repellendus dolorem sunt?</p></div>
+        <div class="box-3">
+            <div class="child-box-1">This list is box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt veritatis mollitia harum num.</div>
+            <div class="child-box-2">Lorem ipsum dolor sit amet consectetur.</div>
+        </div>
+        <div class="buttons">
+            <p>even</p>
+            <div class="button-1">Buttons</div>
+            and
+            <div class="link"><a href="">links</a></div>
+            are boxes.
+        </div>
+    </div>
+</body>
+</html>
